@@ -5,7 +5,6 @@ let D7 = 13; // BUTTON or PIR Sensor
 GPIO.set_mode(D7, GPIO.MODE_INPUT);  // Config D7 as Input Pin
 
 // MQTT Configuration
-
 let node = 'n1';
 let pub_topic = 'data/' + node;
 
