@@ -13,17 +13,17 @@ let led = "red";
 
 Timer.set(1000, true, function() {
     if(led === "red"){
-        let red = GPIO.write(D0,1);
+        GPIO.write(D0,1);
         GPIO.write(D1,0);
         GPIO.write(D2,0);
         led = "green";
     } else if(led === "green"){
-        let green = GPIO.write(D1,1);
+        GPIO.write(D1,1);
         GPIO.write(D0,0);
         GPIO.write(D2,0);
         led = "blue";
     } else if(led === "blue"){
-        let blue = GPIO.write(D2,1);
+        GPIO.write(D2,1);
         GPIO.write(D0,0);
         GPIO.write(D1,0);
         led = "red";
